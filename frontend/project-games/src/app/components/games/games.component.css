@@ -1,0 +1,15 @@
+.game {
+  background: #eee;
+  border: 1px solid #bcb2b2;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px 0 #171717;
+  border-color: rgba(223,225,229,0);
+  font-family: "Verdana", sans-serif;
+  border-top: 5px solid rgb(176, 99, 188);
+  border-bottom: 5px solid rgb(176, 99, 188);
+  text-align: center;
+  width: 25vw;
+  height: fit-content;
+}

@@ -1,0 +1,16 @@
+form {
+  display:flex;
+  flex-direction: column;
+
+}
+.card {
+  display: grid;
+  text-align: center;
+  margin: 30px;
+  width: 30em;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}

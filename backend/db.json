@@ -1,0 +1,76 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "metal gear solid 2",
+      "year": 2001,
+      "console": "PS2",
+      "completed": true,
+      "date_of_completion": "2017-08-07T03:00:00.000Z",
+      "personal_notes": "I really liked this game. Kojima really nailed here."
+    },
+    {
+      "id": 2,
+      "title": "metal gear solid 1",
+      "year": 1998,
+      "console": "PS1",
+      "completed": true,
+      "date_of_completion": "2003-05-19T03:00:00.000Z",
+      "personal_notes": "The best game that I've ever played. The first master piece from kojima"
+    },
+    {
+      "title": "dark Souls 2",
+      "year": 2014,
+      "console": "PS4",
+      "completed": true,
+      "date_of_completion": "2020-06-11T03:00:00.000Z",
+      "personal_notes": "This game is a perfect merge of frustration and satisfaction. I love it",
+      "id": 3
+    },
+    {
+      "title": "fortnite",
+      "year": 2017,
+      "console": "PS4",
+      "completed": false,
+      "date_of_completion": "2022-05-22T03:56:35.044Z",
+      "personal_notes": "This game is awesome, imposible to get tired cause each game is unique",
+      "id": 4
+    },
+    {
+      "title": "donkey kong country",
+      "year": 1994,
+      "console": "SNES",
+      "completed": true,
+      "date_of_completion": "1999-07-20T03:00:00.000Z",
+      "personal_notes": "this moneky game is fantastic. Made my chieldhood awesome\n",
+      "id": 5
+    },
+    {
+      "title": "call of duty warzone",
+      "year": 2020,
+      "console": "PS4",
+      "completed": false,
+      "date_of_completion": "2022-05-22T06:07:16.865Z",
+      "personal_notes": "very real and  adicting war game",
+      "id": 6
+    },
+    {
+      "title": "grand theft auto 5",
+      "year": 2013,
+      "console": "PS3",
+      "completed": true,
+      "date_of_completion": "2015-07-27T03:00:00.000Z",
+      "personal_notes": "Very funny game that allows you to do everything do you want in a fictictional city",
+      "id": 7
+    },
+    {
+      "title": "super mario world",
+      "year": 1994,
+      "console": "SNES",
+      "completed": true,
+      "date_of_completion": "1999-02-25T03:00:00.000Z",
+      "personal_notes": "my first experience with plataform games, so nostalgic!",
+      "id": 8
+    }
+  ]
+}

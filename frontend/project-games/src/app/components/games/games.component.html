@@ -1,0 +1,9 @@
+<div class="game">
+  <h3><b>Title: </b>{{title}}</h3>
+  <h4><b>Year: </b>{{year}} ({{howOld(year)}})</h4>
+  <h4><b>Console: </b>{{console}}</h4>
+  <h4><b>Completed: </b>{{booleanResult(completed)}}</h4>
+  <h4 *ngIf="completed"><b>Date of completion: </b>{{dateStyle(date)}}</h4>
+  <h4><b>Personal Notes </b>{{notes}}</h4>
+
+</div>

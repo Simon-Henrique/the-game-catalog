@@ -1,0 +1,36 @@
+<section>
+<mat-card class="card">
+  <mat-card-title>Include a Game</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Title" [(ngModel)]="game.title" name="title">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Year" type="number" [(ngModel)]="game.year" name="year" [max]="2022">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select [(ngModel)]="game.console" placeholder="Console" name="console">
+        <mat-option *ngFor="let console of consoles"      [value]="console">{{console}}</mat-option>
+    </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select [(ngModel)]="game.completed" placeholder="Completed?" name="completed">
+        <mat-option [value]="true">Yes</mat-option>
+        <mat-option [value]="false">No</mat-option>
+    </mat-select>
+    </mat-form-field>
+    <mat-form-field *ngIf="game.completed">
+      <input matInput placeholder="Date of Completion" [matDatepicker]="picker" [max]="today" [(ngModel)]="game.date_of_completion" name="date" >
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Personal Notes</mat-label>
+      <textarea matInput [(ngModel)]="game.personal_notes" name="notes"></textarea>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="includeGame()" color="primary">Save</button>
+  <button mat-raised-button (click)="cancel()">Cancel</button>
+</mat-card>
+</section>

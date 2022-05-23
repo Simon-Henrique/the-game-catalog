@@ -1,0 +1,24 @@
+<section>
+<form class="example-form">
+  <mat-form-field class="search-input" appearance="fill">
+    <mat-label>Please, search in lowerCase</mat-label>
+    <input matInput placeholder="Ex: fortnite" #input (keyup)="search(input.value)">
+  </mat-form-field>
+  <mat-checkbox class="completed-filter"
+  labelPosition="before"
+  color="primary"
+  (change)="completedFilter()"
+  [(ngModel)]="filterGame" name="filter"
+  >Completed games only</mat-checkbox>
+
+
+<div class="games-list">
+  <app-games *ngFor="let game of games"
+  [title]="game.title"
+  [year]="game.year"
+  [console]="game.console"
+  [completed]="game.completed"
+  [date]="game.date_of_completion"
+  [notes]="game.personal_notes"
+  ></app-games>
+</div>

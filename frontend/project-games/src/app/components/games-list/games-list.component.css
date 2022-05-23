@@ -1,0 +1,24 @@
+section {
+  text-align: center;
+}
+.games-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.search-input {
+  background-color:#424242;
+  margin: 30px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.3em;
+}
+.completed-filter{
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.3em;
+}
