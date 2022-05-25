@@ -16,7 +16,7 @@ export class GamesListComponent implements OnInit {
   constructor(private Gameserviceservice: GameServiceService) { }
 
   ngOnInit(): void {
-    this.Gameserviceservice.readGame().subscribe(games => {
+    this.Gameserviceservice.readGAME().subscribe(games => {
       this.setGames = games;
       this.games = this.setGames
     })
@@ -24,9 +24,7 @@ export class GamesListComponent implements OnInit {
 
   search(value: string){
     if(value.length != 0){
-      console.log(value);
-    const searchResult = this.setGames.filter((sgame) => {return !sgame.title.indexOf(value)}  );
-    console.log(searchResult);
+    const searchResult = this.setGames.filter((sgame) => {return !sgame.title.indexOf(value.toLowerCase())}  );
     this.games = searchResult
     }else{this.games = this.setGames}
 }

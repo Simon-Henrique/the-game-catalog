@@ -43,9 +43,10 @@ export class GamesIncludeComponent implements OnInit {
     if(this.isText(this.game.title) && this.isText(this.game.console) && this.isValidYear(this.game.year)) {
       const lower = this.game.title.toLowerCase();
       this.game.title = lower
-      this.gameserviceservice.include(this.game).subscribe(() => {
+      this.gameserviceservice.includeGAME(this.game).subscribe(() => {
         this.gameserviceservice.feedback('Success');
         this.router.navigate(['/'])
+        console.log(this.game)
       })
     } else [
       this.gameserviceservice.feedback('Please, check the informations and try again.'),

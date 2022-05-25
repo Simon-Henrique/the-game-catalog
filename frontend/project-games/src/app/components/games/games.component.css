@@ -11,5 +11,6 @@
   border-bottom: 5px solid rgb(176, 99, 188);
   text-align: center;
   width: 25vw;
-  height: fit-content;
+  min-height: 46vh;
+
 }

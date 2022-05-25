@@ -3,7 +3,7 @@
   <mat-card-title>Include a Game</mat-card-title>
   <form>
     <mat-form-field>
-      <input matInput placeholder="Title" [(ngModel)]="game.title" name="title">
+      <input matInput placeholder="Title" maxlength="30" [(ngModel)]="game.title" name="title">
     </mat-form-field>
     <mat-form-field>
       <input matInput placeholder="Year" type="number" [(ngModel)]="game.year" name="year" [max]="2022">
@@ -27,7 +27,7 @@
     </mat-form-field>
     <mat-form-field>
       <mat-label>Personal Notes</mat-label>
-      <textarea matInput [(ngModel)]="game.personal_notes" name="notes"></textarea>
+      <textarea matInput maxlength="100"   [(ngModel)]="game.personal_notes" name="notes"></textarea>
     </mat-form-field>
   </form>
   <button mat-raised-button (click)="includeGame()" color="primary">Save</button>
