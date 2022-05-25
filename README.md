@@ -1,4 +1,4 @@
-game-catalog.netlify.app/
+https://game-catalog.netlify.app/
 
 This is a beaten challenge!
 
