@@ -10,7 +10,7 @@
   border-top: 5px solid rgb(176, 99, 188);
   border-bottom: 5px solid rgb(176, 99, 188);
   text-align: center;
-  width: 25vw;
-  min-height: 46vh;
+  min-height: 48vh;
+  max-width: 250px;
 
 }
