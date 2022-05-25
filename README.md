@@ -1,3 +1,5 @@
+game-catalog.netlify.app/
+
 This is a beaten challenge!
 
 The challenge asked for to create a catalog of games. The user is able to fill the catalog from a form and see the games that are already filled in. 
